@@ -50,7 +50,7 @@
 # 21
 # <class 'int'>
 # 2. Float (float)
-
+ #comment file 
 # Stores decimal numbers.
 
 # price = 99.99
