@@ -1,223 +1,83 @@
-# Lists in Python
+# Python List
 
-# A List is a collection of items stored in a single variable.
+# List Python ka ek data structure hai jisme hum multiple values ko ek hi variable me store kar sakte hain.
 
-# Ordered ✅
-# Mutable (can be changed) ✅
-# Allows duplicate values ✅
-# Creating a List
-# numbers = [10, 20, 30, 40]
+# List ordered hoti hai.
+# List mutable hoti hai (change kar sakte hain).
+# Different data types store kar sakti hai.
+# Square brackets [] ka use hota hai.
+# List Banane Ka Tarika
+# fruits = ["Apple", "Banana", "Mango"]
+# print(fruits)
 
-# print(numbers)
+# Output:
 
-# Output
+# ['Apple', 'Banana', 'Mango']
+# Indexing
+# fruits = ["Apple", "Banana", "Mango"]
 
-# [10, 20, 30, 40]
-# Accessing Elements
+# print(fruits[0])
+# print(fruits[1])
 
-# Index starts from 0.
+# Output:
 
-# numbers = [10, 20, 30, 40]
+# Apple
+# Banana
+# List Me Value Add Karna
+# fruits = ["Apple", "Banana"]
 
-# print(numbers[0])
-# print(numbers[2])
+# fruits.append("Mango")
 
-# Output
+# print(fruits)
 
-# 10
-# 30
-# Negative Indexing
-# numbers = [10, 20, 30, 40]
+# Output:
 
-# print(numbers[-1])
-# print(numbers[-2])
+# ['Apple', 'Banana', 'Mango']
+# List Me Value Insert Karna
+# numbers = [1, 2, 4]
 
-# Output
-
-# 40
-# 30
-# Updating Elements
-# numbers = [10, 20, 30]
-
-# numbers[1] = 100
+# numbers.insert(2, 3)
 
 # print(numbers)
 
-# Output
+# Output:
 
-# [10, 100, 30]
-# Adding Elements
-# append()
+# [1, 2, 3, 4]
+# List Se Value Remove Karna
+# fruits = ["Apple", "Banana", "Mango"]
 
-# Adds one element at the end.
+# fruits.remove("Banana")
 
-# numbers = [10, 20, 30]
+# print(fruits)
 
-# numbers.append(40)
+# Output:
 
-# print(numbers)
-
-# Output
-
-# [10, 20, 30, 40]
-# insert()
-
-# Adds an element at a specific position.
-
-# numbers = [10, 20, 30]
-
-# numbers.insert(1, 99)
-
-# print(numbers)
-
-# Output
-
-# [10, 99, 20, 30]
-# Removing Elements
-# remove()
-
-# Removes a value.
-
-# numbers = [10, 20, 30]
-
-# numbers.remove(20)
-
-# print(numbers)
-
-# Output
-
-# [10, 30]
-# pop()
-
-# Removes by index.
-
-# numbers = [10, 20, 30]
-
-# numbers.pop(1)
-
-# print(numbers)
-
-# Output
-
-# [10, 30]
-# Length of List
+# ['Apple', 'Mango']
+# List Ki Length
 # numbers = [10, 20, 30, 40]
 
 # print(len(numbers))
 
-# Output
+# Output:
 
 # 4
-# Traversing a List
-# Using for Loop
-# numbers = [10, 20, 30, 40]
+# List Loop Ke Sath
+# fruits = ["Apple", "Banana", "Mango"]
 
-# for i in numbers:
+# for i in fruits:
 #     print(i)
-# Using Index
-# numbers = [10, 20, 30, 40]
 
-# for i in range(len(numbers)):
-#     print(numbers[i])
-# Searching in List
-# numbers = [10, 20, 30, 40]
+# Output:
 
-# print(20 in numbers)
-# print(100 in numbers)
-
-# Output
-
-# True
-# False
-# Sorting a List
-# Ascending Order
-# numbers = [5, 2, 8, 1]
-
-# numbers.sort()
-
-# print(numbers)
-
-# Output
-
-# [1, 2, 5, 8]
-# Descending Order
-# numbers = [5, 2, 8, 1]
-
-# numbers.sort(reverse=True)
-
-# print(numbers)
-
-# Output
-
-# [8, 5, 2, 1]
-# Reverse a List
-# numbers = [10, 20, 30, 40]
-
-# numbers.reverse()
-
-# print(numbers)
-
-# Output
-
-# [40, 30, 20, 10]
-# Slicing
-# numbers = [10, 20, 30, 40, 50]
-
-# print(numbers[1:4])
-
-# Output
-
-# [20, 30, 40]
-# Common Interview Programs
-# Find Largest Element
-# numbers = [10, 40, 20, 80, 30]
-
-# largest = numbers[0]
-
-# for i in numbers:
-#     if i > largest:
-#         largest = i
-
-# print(largest)
-
-# Output
-
-# 80
-# Find Sum of List
-# numbers = [10, 20, 30, 40]
-
-# total = 0
-
-# for i in numbers:
-#     total += i
-
-# print(total)
-
-# Output
-
-# 100
-# Find Maximum and Minimum
-# numbers = [10, 40, 20, 80, 30]
-
-# print(max(numbers))
-# print(min(numbers))
+# Apple
+# Banana
+# Mango
 # Important List Methods
-# Method	Use
-# append()	Add element
-# insert()	Add at index
-# remove()	Remove value
-# pop()	Remove by index
-# sort()	Sort list
-# reverse()	Reverse list
-# len()	Length
-# max()	Largest value
-# min()	Smallest value
-# count()	Count occurrences
-# Example
-# numbers = [1, 2, 2, 3, 2]
-
-# print(numbers.count(2))
-
-# Output
-
-# 3
+# Method	Kaam
+# append()	Last me value add karta hai
+# insert()	Specific position par value add karta hai
+# remove()	Value delete karta hai
+# pop()	Index ke hisab se delete karta hai
+# sort()	List ko sort karta hai
+# reverse()	List ko ulta karta hai
+# len()	Length batata hai
