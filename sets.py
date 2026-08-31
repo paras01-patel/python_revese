@@ -1,116 +1,55 @@
-# Sets in Python
+# Python Set
 
-# A Set is a collection of unique elements.
+# Set ek unordered collection hota hai jisme duplicate values allow nahi hoti.
 
-# Features of Set
-# Unordered ✅
-# Mutable ✅
-# No duplicate values ✅
-# Faster searching than lists ✅
-# Creating a Set
-# numbers = {10, 20, 30, 40}
-
-# print(numbers)
-# print(type(numbers))
-
-# Output
-
-# {10, 20, 30, 40}
-# <class 'set'>
-# Duplicate Values are Removed
-# numbers = {10, 20, 20, 30, 30, 40}
-
-# print(numbers)
-
-# Output
-
-# {10, 20, 30, 40}
-# Creating an Empty Set
-
-# ❌ Wrong
-
-# s = {}
-# print(type(s))
-
-# Output:
-
-# <class 'dict'>
-
-# ✅ Correct
-
-# s = set()
-# print(type(s))
-
-# Output:
-
-# <class 'set'>
-# Add Elements
-# numbers = {10, 20, 30}
-
-# numbers.add(40)
+# Curly braces {} me likha jata hai.
+# Duplicate values automatically remove ho jati hain.
+# Indexing nahi hoti.
+# Mutable hota hai (elements add/remove kar sakte hain).
+# Set Banane Ka Tarika
+# numbers = {1, 2, 3, 4, 5}
 
 # print(numbers)
 
 # Output:
 
-# {10, 20, 30, 40}
-# Add Multiple Elements
-# numbers = {10, 20}
-
-# numbers.update([30, 40, 50])
+# {1, 2, 3, 4, 5}
+# Duplicate Values
+# numbers = {1, 2, 2, 3, 4, 4, 5}
 
 # print(numbers)
 
 # Output:
 
-# {10, 20, 30, 40, 50}
-# Remove Elements
-# remove()
-# numbers = {10, 20, 30}
+# {1, 2, 3, 4, 5}
+# Add Element
+# numbers = {1, 2, 3}
 
-# numbers.remove(20)
+# numbers.add(4)
+
+# print(numbers)
+
+# Output:
+
+# {1, 2, 3, 4}
+# Remove Element
+# numbers = {1, 2, 3, 4}
+
+# numbers.remove(2)
 
 # print(numbers)
 
 # Output:
 
-# {10, 30}
-# discard()
-# numbers = {10, 20, 30}
+# {1, 3, 4}
+# Loop in Set
+# fruits = {"Apple", "Banana", "Mango"}
 
-# numbers.discard(50)
-
-# print(numbers)
-
-# No error occurs if the value doesn't exist.
-
-# Length of Set
-# numbers = {10, 20, 30, 40}
-
-# print(len(numbers))
-
-# Output:
-
-# 4
-# Check Membership
-# numbers = {10, 20, 30}
-
-# print(20 in numbers)
-# print(50 in numbers)
-
-# Output:
-
-# True
-# False
-# Traversing a Set
-# numbers = {10, 20, 30, 40}
-
-# for i in numbers:
-#     print(i)
-# Set Operations
+# for fruit in fruits:
+#     print(fruit)
 # Union (|)
 
-# Combines all unique elements.
+# Dono sets ke unique elements.
 
 # a = {1, 2, 3}
 # b = {3, 4, 5}
@@ -134,7 +73,7 @@
 # {2, 3}
 # Difference (-)
 
-# Elements in first set but not second.
+# Pehle set me jo hai aur dusre me nahi.
 
 # a = {1, 2, 3}
 # b = {2, 3, 4}
@@ -144,52 +83,12 @@
 # Output:
 
 # {1}
-# Symmetric Difference (^)
-
-# Elements present in only one set.
-
-# a = {1, 2, 3}
-# b = {2, 3, 4}
-
-# print(a ^ b)
-
-# Output:
-
-# {1, 4}
-# Convert List to Set
-
-# Useful for removing duplicates.
-
-# nums = [1, 2, 2, 3, 3, 4]
-
-# unique_nums = set(nums)
-
-# print(unique_nums)
-
-# Output:
-
-# {1, 2, 3, 4}
-# Interview Questions
-# Remove duplicates from a list
-# nums = [1, 2, 2, 3, 3, 4]
-
-# nums = list(set(nums))
-
-# print(nums)
-# Check Common Elements
-# a = [1, 2, 3]
-# b = [3, 4, 5]
-
-# if set(a) & set(b):
-#     print("Common elements found")
 # Important Set Methods
-# Method	Use
-# add()	Add one element
-# update()	Add multiple elements
-# remove()	Remove element
-# discard()	Remove without error
-# clear()	Remove all elements
-# union()	Combine sets
-# intersection()	Common elements
-# difference()	Difference
-# symmetric_difference()	Unique elements
+# Method	Kaam
+# add()	Element add karta hai
+# remove()	Element remove karta hai
+# pop()	Random element remove karta hai
+# clear()	Set empty karta hai
+# union()	Sets ko combine karta hai
+# intersection()	Common elements deta hai
+# difference()	Difference deta hai
