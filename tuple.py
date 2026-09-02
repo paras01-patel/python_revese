@@ -1,180 +1,114 @@
-# Tuple in Python
+# Python Tuple
 
-# A Tuple is a collection of items stored in a single variable.
+# Tuple ek collection data type hai jo multiple values ko ek hi variable me store karta hai.
 
-# Features of Tuple
-# Ordered ✅
-# Immutable (cannot be changed) ✅
-# Allows duplicate values ✅
-# Faster than List ✅
-# Creating a Tuple
+# Tuple ordered hoti hai.
+# Tuple immutable hoti hai (change nahi kar sakte).
+# Round brackets () ka use hota hai.
+# Duplicate values allow hoti hain.
+# Tuple Banane Ka Tarika
 # numbers = (10, 20, 30, 40)
 
 # print(numbers)
-# print(type(numbers))
 
-# Output
+# Output:
 
 # (10, 20, 30, 40)
-# <class 'tuple'>
-# Accessing Elements
-# numbers = (10, 20, 30, 40)
+# Indexing
+# t = (100, 200, 300, 400)
 
-# print(numbers[0])
-# print(numbers[2])
+# print(t[0])
+# print(t[2])
 
-# Output
+# Output:
 
-# 10
-# 30
+# 100
+# 300
 # Negative Indexing
-# numbers = (10, 20, 30, 40)
+# t = (10, 20, 30, 40)
 
-# print(numbers[-1])
-# print(numbers[-2])
+# print(t[-1])
 
-# Output
+# Output:
 
 # 40
-# 30
-# Tuple is Immutable
-
-# ❌ Not Allowed
-
-# numbers = (10, 20, 30)
-
-# numbers[1] = 100
-
-# Error
-
-# TypeError: 'tuple' object does not support item assignment
-# Single Element Tuple
-
-# ❌ Wrong
-
-# t = (10)
-
-# print(type(t))
-
-# Output:
-
-# <class 'int'>
-
-# ✅ Correct
-
-# t = (10,)
-
-# print(type(t))
-
-# Output:
-
-# <class 'tuple'>
-# Tuple Packing
-# student = ("Paras", 21, "BCA")
-
-# print(student)
-# Tuple Unpacking
-# student = ("Paras", 21, "BCA")
-
-# name, age, course = student
-
-# print(name)
-# print(age)
-# print(course)
-
-# Output
-
-# Paras
-# 21
-# BCA
-# Length of Tuple
-# numbers = (10, 20, 30, 40)
-
-# print(len(numbers))
-
-# Output
-
-# 4
-# Traversing a Tuple
-# numbers = (10, 20, 30, 40)
-
-# for i in numbers:
-#     print(i)
 # Slicing
-# numbers = (10, 20, 30, 40, 50)
+# t = (10, 20, 30, 40, 50)
 
-# print(numbers[1:4])
+# print(t[1:4])
 
-# Output
+# Output:
 
 # (20, 30, 40)
-# Count Method
+# Loop in Tuple
+# t = (10, 20, 30, 40)
 
-# Counts occurrences of a value.
+# for i in t:
+#     print(i)
 
-# numbers = (10, 20, 20, 30, 20)
+# Output:
 
-# print(numbers.count(20))
+# 10
+# 20
+# 30
+# 40
+# Tuple Methods
+# count()
 
-# Output
+# Kitni baar value aayi hai.
+
+# t = (1, 2, 2, 3, 2)
+
+# print(t.count(2))
+
+# Output:
 
 # 3
-# Index Method
+# index()
 
-# Returns the index of a value.
+# Value ka index batata hai.
 
-# numbers = (10, 20, 30, 40)
+# t = (10, 20, 30, 40)
 
-# print(numbers.index(30))
+# print(t.index(30))
 
-# Output
+# Output:
 
 # 2
-# Convert Tuple to List
-# numbers = (10, 20, 30)
+# Tuple Packing
+# t = 10, 20, 30
 
-# numbers = list(numbers)
+# print(t)
 
-# numbers.append(40)
+# Output:
 
-# print(numbers)
+# (10, 20, 30)
+# Tuple Unpacking
+# t = (10, 20, 30)
 
-# Output
+# a, b, c = t
 
-# [10, 20, 30, 40]
-# Convert List to Tuple
-# numbers = [10, 20, 30, 40]
+# print(a)
+# print(b)
+# print(c)
 
-# numbers = tuple(numbers)
+# Output:
 
-# print(numbers)
+# 10
+# 20
+# 30
+# Tuple Immutable Hai
+# t = (10, 20, 30)
 
-# Output
+# t[0] = 100
 
-# (10, 20, 30, 40)
-# Interview Questions
-# Difference Between List and Tuple
+# Output:
+
+# TypeError: 'tuple' object does not support item assignment
+# List vs Tuple
 # List	Tuple
 # Mutable	Immutable
-# Uses []	Uses ()
-# Slower	Faster
-# More Methods	Fewer Methods
-# When Should We Use Tuple?
+# [] use hota hai	() use hota hai
+# Change kar sakte hain	Change nahi kar sakte
+# More methods	Kam methods
 
-# Use a tuple when data should not change.
-
-# Examples:
-
-# Student records
-# Coordinates (x, y)
-# Database records
-# Fixed configuration values
-# Practice Questions
-# 1. Find the Length of a Tuple
-# t = (10, 20, 30, 40, 50)
-# 2. Count How Many Times 20 Appears
-# t = (10, 20, 20, 30, 20)
-# 3. Convert a Tuple into a List
-# t = (1, 2, 3, 4)
-# 4. Find the Largest Element
-# t = (10, 50, 30, 70, 20)
