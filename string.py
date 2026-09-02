@@ -1,216 +1,146 @@
-# Strings in Python
+# Python String
 
-# A String is a sequence of characters enclosed in quotes.
+# String characters (letters, numbers, symbols) ka collection hoti hai jo quotes ("" ya '') ke andar likhi jati hai.
 
-# name = "Paras"
-
-# Here, "Paras" is a string.
-
-# Creating Strings
 # name = "Paras"
 # city = 'Indore'
+# String Create Karna
+# name = "Paras"
 
 # print(name)
-# print(city)
-# String Indexing
 
-# Index starts from 0.
+# Output:
 
-# name = "Paras"
+# Paras
+# Indexing
+
+# String ka har character ek index par hota hai.
+
+# name = "Python"
 
 # print(name[0])
 # print(name[1])
-# print(name[2])
+# print(name[5])
 
-# Output
+# Output:
 
 # P
-# a
-# r
+# y
+# n
 # Negative Indexing
-# name = "Paras"
+# name = "Python"
 
 # print(name[-1])
 # print(name[-2])
 
-# Output
+# Output:
 
-# s
-# a
+# n
+# o
 # String Slicing
-# Syntax
-# string[start:end]
-# Example
-# name = "Paras"
+# name = "Python"
 
 # print(name[0:3])
+# print(name[2:5])
 
-# Output
+# Output:
 
-# Par
-# name = "Paras"
-
-# print(name[1:4])
-
-# Output
-
-# ara
-# String Length
-# name = "Paras"
-
-# print(len(name))
-
-# Output
-
-# 5
+# Pyt
+# tho
 # String Concatenation
+
+# Do strings ko jodna.
+
 # first = "Paras"
 # last = "Chandrawanshi"
 
 # print(first + " " + last)
 
-# Output
+# Output:
 
 # Paras Chandrawanshi
 # String Repetition
 # print("Hi " * 3)
 
-# Output
+# Output:
 
 # Hi Hi Hi
-# Convert Case
-# name = "Paras"
-
+# Important String Methods
+# Upper Case
+# name = "paras"
 # print(name.upper())
-# print(name.lower())
 
-# Output
+# Output:
 
 # PARAS
+# Lower Case
+# name = "PARAS"
+# print(name.lower())
+
+# Output:
+
 # paras
-# Remove Spaces
-# name = "  Paras  "
+# Capitalize
+# name = "paras"
+# print(name.capitalize())
 
-# print(name.strip())
-
-# Output
+# Output:
 
 # Paras
-# Replace Characters
-# name = "Paras"
+# Replace
+# text = "I like Java"
 
-# print(name.replace("a", "@"))
+# print(text.replace("Java", "Python"))
 
-# Output
+# Output:
 
-# P@r@s
-# Split String
-# text = "Python Django React"
+# I like Python
+# Find
+# text = "Hello Python"
 
-# print(text.split())
+# print(text.find("Python"))
 
-# Output
+# Output:
 
-# ['Python', 'Django', 'React']
-# Check Substring
-# name = "Paras"
-
-# print("ra" in name)
-
-# Output
-
-# True
-# Loop Through String
+# 6
+# String Loop
 # name = "Paras"
 
 # for ch in name:
 #     print(ch)
-# Reverse String
-# Method 1 (Slicing)
+
+# Output:
+
+# P
+# a
+# r
+# a
+# s
+# String Length
 # name = "Paras"
 
-# print(name[::-1])
+# print(len(name))
 
-# Output
+# Output:
 
-# saraP
-# Method 2 (Loop)
-# name = "Paras"
+# 5
+# String Sorting
+# s = "dcba"
 
-# rev = ""
+# print(sorted(s))
 
-# for ch in name:
-#     rev = ch + rev
+# Output:
 
-# print(rev)
-# Palindrome Check
+# ['a', 'b', 'c', 'd']
 
-# A palindrome reads the same forward and backward.
+# Sorted string banane ke liye:
 
-# Examples:
+# s = "dcba"
 
-# madam
-# level
-# radar
-# s = "madam"
+# result = "".join(sorted(s))
 
-# if s == s[::-1]:
-#     print("Palindrome")
-# else:
-#     print("Not Palindrome")
-# Count Characters
-# s = "banana"
+# print(result)
 
-# count = 0
+# Output:
 
-# for ch in s:
-#     if ch == "a":
-#         count += 1
-
-# print(count)
-
-# Output
-
-# 3
-# Character Frequency (Important)
-# s = "banana"
-
-# freq = {}
-
-# for ch in s:
-#     if ch in freq:
-#         freq[ch] += 1
-#     else:
-#         freq[ch] = 1
-
-# print(freq)
-
-# Output
-
-# {'b': 1, 'a': 3, 'n': 2}
-# Valid Anagram (Interview)
-
-# Two strings are anagrams if they contain the same characters with the same frequency.
-
-# s = "listen"
-# t = "silent"
-
-# if sorted(s) == sorted(t):
-#     print(True)
-# else:
-#     print(False)
-
-# Output
-
-# True
-# Important String Methods
-# Method	Use
-# upper()	Uppercase
-# lower()	Lowercase
-# strip()	Remove spaces
-# replace()	Replace text
-# split()	Convert to list
-# find()	Find index
-# count()	Count characters
-# startswith()	Check beginning
-# endswith()	Check ending
+# abcd
